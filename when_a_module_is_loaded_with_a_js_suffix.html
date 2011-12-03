@@ -1,0 +1,12 @@
+<html>
+	<head>
+		<script>require = { baseUrl: 'scripts' }</script>
+		<script>p = function(s) { document.body.innerHTML += s + '<BR>'; }</script>
+		<script>window.onerror = function(e) { p("ERROR OCCURRED!"); };</script>
+		<script src="http://requirejs.org/docs/release/1.0.2/minified/require.js"></script>
+
+		<script>require(['scripts/some/main.js'], function(main) { p(main()); });</script>
+	</head>
+	<body>
+	</body>
+</html>
